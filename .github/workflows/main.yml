@@ -56,8 +56,8 @@ jobs:
         with:
 #          username: delonart
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: nn251275n
-#          password: ${{ secrets.DOCKER_PASSWORD }}
+#          password: nn251275n
+          password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push to Docker Hub
         # Пуш образа в Docker Hub
         uses: docker/build-push-action@v2
